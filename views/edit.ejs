@@ -101,7 +101,7 @@
                 var json = JSON.stringify(data);
 
                 //console.log(json);
-                var url = 'http://00cde5e5.ngrok.io' + '/edit/' + id;
+                var url = 'https://bazinga-demo.herokuapp.com' + '/edit/' + id;
 
                 var xhr = new XMLHttpRequest();
                 xhr.open("PUT", url, true);
@@ -115,7 +115,7 @@
                     }
                 }
                 xhr.send(json);
-                setTimeout(function(){ window.open('http://localhost:3000',"_self") }, 1000);
+                setTimeout(function(){ window.open('https://bazinga-demo.herokuapp.com/',"_self") }, 1000);
 
                 // 
 
@@ -124,7 +124,7 @@
 
             function redirect(){
                 let id = document.getElementById('OrderID').value;
-                let string = 'http://localhost:3000' + '/edit/' + id;
+                let string = 'https://bazinga-demo.herokuapp.com' + '/edit/' + id;
 
                 // location.replace(string);
                 // window.location.replace(string);
