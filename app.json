@@ -1,0 +1,6 @@
+{
+    "name": "Bazinga StoreWatch",
+    "description" : "Storewatch for a shopify store",
+    "repository" : "https://github.com/EazyDev/Bazinga",
+    "keywords" : ["node","express","shopify"],
+}
