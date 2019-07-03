@@ -120,6 +120,6 @@ app.get('/edit',function(req,rep){
     rep.sendFile(__dirname + '/views/edit.html');
 })
 
-app.listen(3000,function () {
-    console.log('our server is live on port 3000');
+app.listen(process.env.PORT || 3000,function () {
+    console.log("our server is live on port %d in %s mode",this.address().port,app.settings.env);
 })
