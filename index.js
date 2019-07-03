@@ -21,7 +21,7 @@ app.use((req,res,next) => {
     next();
 });
 
-const orderBazingaModel = require('../Bazinga/models/orderBazinga');
+const orderBazingaModel = require('./models/orderBazinga');
 //yes
 
 mongoose.connect("mongodb+srv://Salman:qwerty123@victorcluster-6cqju.mongodb.net/test?retryWrites=true",function(err){
